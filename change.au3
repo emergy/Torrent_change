@@ -1,5 +1,5 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Res_Fileversion=0.1.0.16
+#AutoIt3Wrapper_Res_Fileversion=0.1.0.17
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
@@ -46,8 +46,9 @@ While 1
 			If $monNum > 1 And StringLen($hotkey_for_swich_to_motitor) > 0 Then
 				ProcessWaitClose($iPID)
 				Send($hotkey_for_swich_to_motitor)
-				Exit
 			EndIf
+
+			Exit
 		Case $btnDownload
 			Run($torrent_client_cmd_line)
 			Exit
