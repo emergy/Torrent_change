@@ -1,5 +1,5 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Res_Fileversion=0.1.0.29
+#AutoIt3Wrapper_Res_Fileversion=0.1.0.30
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
@@ -56,6 +56,7 @@ Func play()
 	GUISetState(@SW_HIDE, $Gui)
 	$monNum = _WinAPI_GetSystemMetrics(80)
 
+	; No change display if hold ctrl
 	If _IsPressed("11", $hDLL) Then $full_screen = 0
 
 	If $full_screen = 1 Then
