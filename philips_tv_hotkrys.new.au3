@@ -2,6 +2,8 @@
 #AutoIt3Wrapper_Res_Fileversion=0.0.0.2
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
+#include "CommInterface.au3"
+#AutoIt3Wrapper_Au3Check_Parameters=-q -d -w 1 -w 2 -w 3 -w- 4 -w 5 -w 6 -w- 7
 #include "WinHttp.au3"
 #include <Misc.au3>
 #include <Array.au3>
