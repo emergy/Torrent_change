@@ -1,5 +1,5 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Res_Fileversion=0.1.0.30
+#AutoIt3Wrapper_Res_Fileversion=0.1.0.31
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
@@ -21,7 +21,7 @@ $hotkey_for_swich_to_motitor = "!#^{NUMPAD2}"
 
 $full_screen = 1
 
-$Gui = GUICreate("Change open as...", 395, 200, -1, -1, $WS_POPUP, $WS_EX_DLGMODALFRAME + $WS_EX_TOPMOST)
+$Gui = GUICreate("Change open as...", 395, 200, -1, -1, -1, $WS_EX_TOPMOST)
 GUIRegisterMsg($WM_LBUTTONDOWN, "_WinMove")
 
 $btnPlay = GUICtrlCreateButton("Play", 200, 5, 190, 190)
