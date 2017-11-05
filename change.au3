@@ -59,6 +59,7 @@ Func play()
 	; No change display if hold ctrl
 	If _IsPressed("11", $hDLL) Then $full_screen = 0
 
+        
 	If $full_screen = 1 Then
 		If $monNum > 1 And StringLen($hotkey_for_swich_to_tv) > 0 Then
 			Send($hotkey_for_swich_to_tv)
@@ -69,6 +70,13 @@ Func play()
 	$iPID = Run($ace_stream_player_cmd_line)
 	Sleep(500)
 	$HWnd = _GetHwndFromPID($iPID)
+    
+    While ProcessExists($iPID) <> 0
+        If WinExists("Ace Stream Web") Then
+            WinClose("Ace Stream Web")
+        EndIf
+        Sleep(500)
+    WEnd
 
 	If $full_screen = 1 Then
 		If $monNum > 1 And StringLen($hotkey_for_swich_to_motitor) > 0 Then
