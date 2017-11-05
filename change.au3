@@ -3,6 +3,7 @@
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
+AutoItSetOption("WinTitleMatchMode", 2)
 AutoItSetOption("TrayIconHide", 1)
 
 #include <GuiConstantsEx.au3>
